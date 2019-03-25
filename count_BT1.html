@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số lần xuất hiện của phần tử</title>
+</head>
+<p>đếm số lần xuất hiện của phần tử</p>
+<body>
+<script>
+    let nums = [];
+    for (let i = 0; i < 100; i++){
+        nums[i] = Math.floor(Math.random() * 101);
+    }
+
+    function countNumber(nums, x) {
+        let count = 0;
+        for (let i = 0; i < nums.length; i++) {
+           if (nums[i] === x){
+               count ++;
+           }
+        }
+        return count;
+    }
+    document.write(countNumber(nums, 6));
+
+</script>
+</body>
+</html>
